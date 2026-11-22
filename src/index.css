@@ -1,0 +1,305 @@
+@import "tailwindcss";
+
+:root {
+  --dark-burgundy: #1e070d;
+  --deep-burgundy: #2f0b14;
+  --burgundy: #581525;
+  --red-wine: #722f37;
+  --cedar: #7f4f34;
+  --cedar-warm: #9b6644;
+  --cedar-dark: #4e2e1d;
+  --cream: #f5ecd7;
+  --parchment: #eadbc0;
+  --parchment-dark: #d9c49e;
+  --gold: #d4af37;
+  --gold-bright: #ecd06f;
+  --gold-muted: #a68529;
+  --ink: #2b1417;
+  --ink-soft: #4e2c30;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark-burgundy);
+  color: var(--cream);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Subtle vintage paper grain overlay */
+.vintage-grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Typography helpers */
+.font-display {
+  font-family: 'IM Fell English', 'Cinzel Decorative', Georgia, serif;
+}
+
+.font-medieval {
+  font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Pinyon Script', cursive;
+}
+
+.font-mono-vintage {
+  font-family: 'Courier Prime', monospace;
+}
+
+/* Scrapbook Washi / Masking Tape */
+.washi-tape {
+  position: relative;
+}
+
+.washi-tape::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 76px;
+  height: 20px;
+  background: rgba(234, 219, 192, 0.55);
+  border-left: 1px dashed rgba(127, 79, 52, 0.45);
+  border-right: 1px dashed rgba(127, 79, 52, 0.45);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+  z-index: 25;
+}
+
+/* Ornate Vintage Borders & Surfaces */
+.parchment-card {
+  background: linear-gradient(145deg, var(--cream) 0%, var(--parchment) 60%, var(--parchment-dark) 100%);
+  color: var(--ink);
+  border: 2px solid var(--gold-muted);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.55),
+    inset 0 0 40px rgba(127, 79, 52, 0.16);
+  position: relative;
+}
+
+.parchment-card::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(166, 133, 41, 0.45);
+  pointer-events: none;
+}
+
+.cedar-panel {
+  background: linear-gradient(160deg, #3c2216 0%, var(--cedar-dark) 50%, #2a170e 100%);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(236, 208, 111, 0.2);
+}
+
+.burgundy-panel {
+  background: linear-gradient(155deg, rgba(88, 21, 37, 0.94) 0%, rgba(36, 9, 16, 0.97) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.38);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.6);
+}
+
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 1.25rem auto;
+  color: var(--gold);
+}
+
+.gold-divider::before,
+.gold-divider::after {
+  content: '';
+  height: 1px;
+  width: 64px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* Vintage Buttons */
+.btn-vintage {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0.7rem 1.35rem;
+  font-family: 'Cinzel', Georgia, serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: linear-gradient(180deg, var(--red-wine) 0%, var(--burgundy) 100%);
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(236, 208, 111, 0.25);
+}
+
+.btn-vintage:hover:not(:disabled) {
+  background: linear-gradient(180deg, #873842 0%, #6b1b2e 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
+}
+
+.btn-vintage:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.btn-vintage:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-gold {
+  background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 55%, var(--gold-muted) 100%);
+  color: var(--dark-burgundy);
+  border-color: #f7e6a3;
+}
+
+.btn-gold:hover:not(:disabled) {
+  background: linear-gradient(180deg, #f5df8c 0%, #deb945 100%);
+}
+
+/* Animations */
+@keyframes flicker {
+  0%, 100% {
+    transform: translateX(-50%) scale(1) rotate(-1deg);
+    opacity: 0.96;
+  }
+  25% {
+    transform: translateX(-50%) scale(1.04, 0.96) rotate(2deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-50%) scale(0.96, 1.05) rotate(-2deg);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translateX(-50%) scale(1.03, 0.98) rotate(1deg);
+    opacity: 1;
+  }
+}
+
+@keyframes blowFlicker {
+  0%, 100% {
+    transform: translateX(-50%) skewX(24deg) scale(0.85, 0.65);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(-50%) skewX(38deg) scale(0.7, 0.5);
+    opacity: 0.45;
+  }
+}
+
+@keyframes smokeRise {
+  0% {
+    transform: translateX(-50%) translateY(0) scale(0.6);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(-35%) translateY(-48px) scale(1.9);
+    opacity: 0;
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(1.5deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.65s ease forwards;
+}
+
+.animate-spin-vinyl {
+  animation: spinSlow 4.5s linear infinite;
+}
+
+.animate-float {
+  animation: floatSlow 4.2s ease-in-out infinite;
+}
+
+/* 3D Card Flip */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-burgundy);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cedar);
+  border-radius: 4px;
+  border: 1px solid var(--gold-muted);
+}
