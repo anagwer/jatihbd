@@ -30,49 +30,49 @@ export const WaxSealIntro: React.FC<WaxSealIntroProps> = ({ onOpen }) => {
     >
       {/* Full-bleed Medieval Scrapbook Desk Collages */}
       <img
-        src="/elements/ocean-top-left.png"
+        src="elements/ocean-top-left.png"
         alt=""
         className="pointer-events-none absolute top-0 left-0 w-44 sm:w-64 opacity-45"
       />
       <img
-        src="/elements/paper-top-left-butterfly.png"
+        src="elements/paper-top-left-butterfly.png"
         alt=""
         className="pointer-events-none absolute top-0 left-0 w-36 sm:w-52 opacity-85"
       />
       <img
-        src="/elements/paper-bottom-left.png"
+        src="elements/paper-bottom-left.png"
         alt=""
         className="pointer-events-none absolute bottom-0 left-0 w-36 sm:w-52 opacity-70"
       />
       <img
-        src="/elements/paper-bottom-right-1.png"
+        src="elements/paper-bottom-right-1.png"
         alt=""
         className="pointer-events-none absolute bottom-0 right-0 w-40 sm:w-56 opacity-80"
       />
       <img
-        src="/elements/red-bottom-right.png"
+        src="elements/red-bottom-right.png"
         alt=""
         className="pointer-events-none absolute top-0 right-0 w-32 sm:w-48 opacity-45 rotate-180"
       />
 
       {/* Celestial & Botanical Engravings */}
       <img
-        src="/elements/sun-face.png"
+        src="elements/sun-face.png"
         alt=""
         className="pointer-events-none absolute top-8 right-6 sm:right-16 w-16 sm:w-24 opacity-75 animate-float"
       />
       <img
-        src="/elements/moon-eclips.png"
+        src="elements/moon-eclips.png"
         alt=""
         className="pointer-events-none absolute bottom-20 left-5 sm:left-16 w-14 sm:w-20 opacity-70 animate-float"
       />
       <img
-        src="/elements/red-rose.png"
+        src="elements/red-rose.png"
         alt=""
         className="pointer-events-none absolute bottom-6 right-5 sm:right-20 w-20 sm:w-28 opacity-90 rotate-6"
       />
       <img
-        src="/elements/gold-butterfly.png"
+        src="elements/gold-butterfly.png"
         alt=""
         className="pointer-events-none absolute top-24 left-6 sm:left-24 w-12 sm:w-16 opacity-85 -rotate-12"
       />
@@ -94,18 +94,18 @@ export const WaxSealIntro: React.FC<WaxSealIntroProps> = ({ onOpen }) => {
       >
         {/* Pinned Corner Stamps */}
         <img
-          src="/elements/memories-stamp.png"
+          src="elements/memories-stamp.png"
           alt=""
           className="pointer-events-none absolute -top-4 -right-3 w-14 sm:w-16 opacity-85 rotate-12 drop-shadow"
         />
         <img
-          src="/elements/love-stamp.png"
+          src="elements/love-stamp.png"
           alt=""
           className="pointer-events-none absolute -bottom-3 -left-3 w-14 sm:w-16 opacity-80 -rotate-12 drop-shadow"
         />
 
         <img
-          src="/elements/envelope-letter.png"
+          src="elements/envelope-letter.png"
           alt="Medieval Dispatch"
           className="mx-auto mb-2 w-24 sm:w-28 drop-shadow-md -rotate-3"
         />
@@ -146,7 +146,7 @@ export const WaxSealIntro: React.FC<WaxSealIntroProps> = ({ onOpen }) => {
           }}
         >
           <img
-            src="/elements/gold-stamp.png"
+            src="elements/gold-stamp.png"
             alt="Seal"
             className="h-16 w-16 object-contain drop-shadow group-hover:rotate-12 transition-transform duration-300"
           />

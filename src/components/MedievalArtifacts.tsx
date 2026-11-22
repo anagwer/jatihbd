@@ -12,28 +12,28 @@ interface Artifact {
 const ARTIFACTS: Artifact[] = [
   {
     id: 'potion',
-    img: '/elements/potion.png',
+    img: 'elements/potion.png',
     title: 'Sweet Tooth Elixir',
     proclamation:
       'Warning: One sip brings back the exact chaotic energy of our infamous late-night sugar rushes.',
   },
   {
     id: 'pigeon',
-    img: '/elements/pigeon.png',
+    img: 'elements/pigeon.png',
     title: 'Royal Messenger',
     proclamation:
       'No matter how busy life gets, one text is all it takes—your big sis is always on standby.',
   },
   {
     id: 'clock',
-    img: '/elements/gold-clock.png',
+    img: 'elements/gold-clock.png',
     title: 'The 2 AM Hourglass',
     proclamation:
       'Certified proof that we can turn a five-minute catch-up into a three-hour deep talk.',
   },
   {
     id: 'books',
-    img: '/elements/books.png',
+    img: 'elements/books.png',
     title: 'Co-Pilot’s Logbook',
     proclamation:
       'Awarded for unmatched patience—never once complaining about my random detours or food picks.',
@@ -61,12 +61,12 @@ export const MedievalArtifacts: React.FC = () => {
         }}
       >
         <img
-          src="/elements/lily-1.png"
+          src="elements/lily-1.png"
           alt=""
           className="pointer-events-none absolute -top-5 -left-4 w-14 sm:w-20 opacity-85 -rotate-12"
         />
         <img
-          src="/elements/lily-2.png"
+          src="elements/lily-2.png"
           alt=""
           className="pointer-events-none absolute -bottom-5 -right-3 w-14 sm:w-20 opacity-85 rotate-12"
         />

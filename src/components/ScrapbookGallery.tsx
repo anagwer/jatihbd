@@ -17,73 +17,73 @@ interface PhotoMemory {
 const PHOTO_MEMORIES: PhotoMemory[] = [
   {
     id: 'us-little',
-    src: '/media/us/us-little.png',
-    frame: '/elements/frame.png',
+    src: 'media/us/us-little.png',
+    frame: 'elements/frame.png',
     shape: 'rect',
-    pin: '/elements/pin.png',
+    pin: 'elements/pin.png',
     title: 'Tiny Troublemakers',
     caption: 'Day one cousin energy—still my favorite little brother.',
   },
   {
     id: 'u-cameback',
-    src: '/media/us/u-cameback.png',
-    frame: '/elements/redangel-frame.png',
+    src: 'media/us/u-cameback.png',
+    frame: 'elements/redangel-frame.png',
     shape: 'rect',
-    pin: '/elements/clip.png',
+    pin: 'elements/clip.png',
     title: 'The Reunion Smile',
     caption: 'Some reunions feel like zero time passed at all.',
   },
   {
     id: 'photo-1',
-    src: '/media/us/photo-1.jpg',
-    frame: '/elements/round-frame.png',
+    src: 'media/us/photo-1.jpg',
+    frame: 'elements/round-frame.png',
     shape: 'round',
-    pin: '/elements/bow.png',
+    pin: 'elements/bow.png',
     title: 'Mall Detours',
     caption: 'That look when I ask if you want to walk one more lap.',
   },
   {
     id: 'photo-2',
-    src: '/media/us/photo-2.jpg',
-    frame: '/elements/frame.png',
+    src: 'media/us/photo-2.jpg',
+    frame: 'elements/frame.png',
     shape: 'rect',
-    pin: '/elements/pin.png',
+    pin: 'elements/pin.png',
     title: 'Lakeside Breeze',
     caption: 'Quiet skies, slow afternoons, and zero rush to go home.',
   },
   {
     id: 'img-1280',
-    src: '/media/us/IMG_1280.jpg',
-    frame: '/elements/4-frame.png',
+    src: 'media/us/IMG_1280.jpg',
+    frame: 'elements/4-frame.png',
     shape: 'filmstrip',
-    pin: '/elements/clip.png',
+    pin: 'elements/clip.png',
     title: 'Table For Two',
     caption: 'Good food tastes ten times better with your commentary.',
   },
   {
     id: 'img-1327',
-    src: '/media/us/IMG_1327.jpg',
-    frame: '/elements/redangel-frame.png',
+    src: 'media/us/IMG_1327.jpg',
+    frame: 'elements/redangel-frame.png',
     shape: 'rect',
-    pin: '/elements/pin.png',
+    pin: 'elements/pin.png',
     title: 'Golden Hour',
     caption: 'No filter needed when the lighting hits just right.',
   },
   {
     id: 'img-2466',
-    src: '/media/us/IMG_2466.png',
-    frame: '/elements/round-frame.png',
+    src: 'media/us/IMG_2466.png',
+    frame: 'elements/round-frame.png',
     shape: 'round',
-    pin: '/elements/bow.png',
+    pin: 'elements/bow.png',
     title: 'Sweet Chaos',
     caption: 'Proof that we have zero self-control around dessert.',
   },
   {
     id: 'img-5130',
-    src: '/media/us/IMG_5130.jpg',
-    frame: '/elements/frame.png',
+    src: 'media/us/IMG_5130.jpg',
+    frame: 'elements/frame.png',
     shape: 'rect',
-    pin: '/elements/clip.png',
+    pin: 'elements/clip.png',
     title: 'Always Team Jati',
     caption: 'One of my favorite snapshots of us.',
   },
@@ -99,37 +99,37 @@ interface VideoMemory {
 const VIDEO_MEMORIES: VideoMemory[] = [
   {
     id: 'u-cry',
-    src: '/media/us/u-cry.mp4',
+    src: 'media/us/u-cry.mp4',
     title: 'Reel I • Unfiltered Moments',
     note: 'Even the emotional ones—always here for you.',
   },
   {
     id: 'video-1',
-    src: '/media/us/video-1.mp4',
+    src: 'media/us/video-1.mp4',
     title: 'Reel II • Our Shenanigans',
     note: 'Never a dull second when we link up.',
   },
   {
     id: 'img-1271',
-    src: '/media/us/IMG_1271.mp4',
+    src: 'media/us/IMG_1271.mp4',
     title: 'Reel III • Out & About',
     note: 'Spontaneous plans are always the best plans.',
   },
   {
     id: 'img-4031',
-    src: '/media/us/IMG_4031.mp4',
+    src: 'media/us/IMG_4031.mp4',
     title: 'Reel IV • Sugar Rush Energy',
     note: 'Zero chill, 100% laughs.',
   },
   {
     id: 'img-4855',
-    src: '/media/us/IMG_4855.mp4',
+    src: 'media/us/IMG_4855.mp4',
     title: 'Reel V • Core Memory',
     note: 'Saving this one forever.',
   },
   {
     id: 'img-5900',
-    src: '/media/us/IMG_5900.mp4',
+    src: 'media/us/IMG_5900.mp4',
     title: 'Reel VI • Just Us',
     note: 'To many more reels this year, Jati!',
   },
@@ -210,27 +210,27 @@ export const ScrapbookGallery: React.FC<ScrapbookGalleryProps> = ({
       <div className="mx-auto max-w-5xl rounded-lg burgundy-panel p-5 sm:p-10 relative overflow-hidden">
         {/* Scrapbook Journal Collage Decorations */}
         <img
-          src="/elements/paper-top-left-butterfly.png"
+          src="elements/paper-top-left-butterfly.png"
           alt=""
           className="pointer-events-none absolute -top-2 -left-2 w-28 sm:w-40 opacity-50"
         />
         <img
-          src="/elements/red-camera.png"
+          src="elements/red-camera.png"
           alt=""
           className="pointer-events-none absolute -top-2 right-2 sm:right-6 w-20 sm:w-28 opacity-90 rotate-12 drop-shadow-lg"
         />
         <img
-          src="/elements/paper-fan.png"
+          src="elements/paper-fan.png"
           alt=""
           className="pointer-events-none hidden sm:block absolute bottom-4 left-4 w-24 opacity-45 -rotate-12"
         />
         <img
-          src="/elements/love-shape-stamp.png"
+          src="elements/love-shape-stamp.png"
           alt=""
           className="pointer-events-none hidden sm:block absolute top-1/3 right-3 w-16 opacity-60 rotate-12"
         />
         <img
-          src="/elements/london.png"
+          src="elements/london.png"
           alt=""
           className="pointer-events-none hidden sm:block absolute top-1/2 left-2 w-20 opacity-45 -rotate-6"
         />
@@ -238,7 +238,7 @@ export const ScrapbookGallery: React.FC<ScrapbookGalleryProps> = ({
         {/* Header with "this is us.png" */}
         <div className="relative z-10 text-center mb-8">
           <img
-            src="/elements/this is us.png"
+            src="elements/this is us.png"
             alt="This Is Us"
             className="mx-auto w-52 sm:w-64 mb-3 drop-shadow-lg"
           />

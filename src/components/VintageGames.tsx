@@ -21,14 +21,14 @@ interface MemorySymbol {
 }
 
 const MEMORY_SYMBOLS: MemorySymbol[] = [
-  { key: 'rose', label: 'Red Rose', img: '/elements/red-rose.png' },
-  { key: 'potion', label: 'Sugar Elixir', img: '/elements/potion.png' },
-  { key: 'clock', label: '2 AM Talks', img: '/elements/gold-clock.png' },
-  { key: 'butterfly', label: 'Butterfly', img: '/elements/butterfly.png' },
-  { key: 'london', label: 'Wanderlust', img: '/elements/london.png' },
-  { key: 'camera', label: 'Snapshots', img: '/elements/red-camera.png' },
-  { key: 'catswag', label: 'Cool Jati', img: '/elements/cat-swag.png' },
-  { key: 'candle', label: 'Make A Wish', img: '/elements/candle.png' },
+  { key: 'rose', label: 'Red Rose', img: 'elements/red-rose.png' },
+  { key: 'potion', label: 'Sugar Elixir', img: 'elements/potion.png' },
+  { key: 'clock', label: '2 AM Talks', img: 'elements/gold-clock.png' },
+  { key: 'butterfly', label: 'Butterfly', img: 'elements/butterfly.png' },
+  { key: 'london', label: 'Wanderlust', img: 'elements/london.png' },
+  { key: 'camera', label: 'Snapshots', img: 'elements/red-camera.png' },
+  { key: 'catswag', label: 'Cool Jati', img: 'elements/cat-swag.png' },
+  { key: 'candle', label: 'Make A Wish', img: 'elements/candle.png' },
 ];
 
 interface CardItem {
@@ -478,7 +478,7 @@ export const VintageGames: React.FC<{ onArcadeWin?: () => void }> = ({
     <section id="games-section" className="py-12 px-3 sm:px-4">
       <div className="mx-auto max-w-4xl rounded-lg burgundy-panel p-5 sm:p-10 relative overflow-hidden">
         <img
-          src="/elements/disco.png"
+          src="elements/disco.png"
           alt=""
           className="pointer-events-none absolute -top-2 left-3 w-14 sm:w-20 opacity-80 animate-float"
         />

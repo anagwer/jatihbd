@@ -17,25 +17,25 @@ const QUEST_ITEMS = [
     key: 'candlesBlown' as const,
     label: '1. Blow Candles',
     href: '#cake-section',
-    stamp: '/elements/love-stamp.png',
+    stamp: 'elements/love-stamp.png',
   },
   {
     key: 'secretDrawersRead' as const,
     label: '2. Secret Notes',
     href: '#letter-section',
-    stamp: '/elements/memories-stamp.png',
+    stamp: 'elements/memories-stamp.png',
   },
   {
     key: 'memoriesViewed' as const,
     label: '3. This Is Us',
     href: '#scrapbook-section',
-    stamp: '/elements/arrowstamp.png',
+    stamp: 'elements/arrowstamp.png',
   },
   {
     key: 'arcadeWon' as const,
     label: '4. Parlor Game',
     href: '#games-section',
-    stamp: '/elements/gold-stamp.png',
+    stamp: 'elements/gold-stamp.png',
   },
 ];
 

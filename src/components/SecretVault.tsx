@@ -38,12 +38,12 @@ export const SecretVault: React.FC<SecretVaultProps> = ({ progress }) => {
 
             <div className="flex items-center justify-center gap-4 mb-4">
               <img
-                src="/elements/cat-swag.png"
+                src="elements/cat-swag.png"
                 alt="Swag Cat"
                 className="w-20 sm:w-24 animate-float"
               />
               <img
-                src="/elements/cat-bring-ballon-flower.png"
+                src="elements/cat-bring-ballon-flower.png"
                 alt="Birthday Cat"
                 className="w-24 sm:w-28 animate-float"
               />
@@ -60,10 +60,10 @@ export const SecretVault: React.FC<SecretVaultProps> = ({ progress }) => {
             </p>
 
             <div className="flex items-center justify-center gap-3">
-              <img src="/elements/love-stamp.png" alt="" className="h-10 w-10 object-contain" />
-              <img src="/elements/memories-stamp.png" alt="" className="h-10 w-10 object-contain" />
-              <img src="/elements/arrowstamp.png" alt="" className="h-10 w-10 object-contain" />
-              <img src="/elements/gold-stamp.png" alt="" className="h-10 w-10 object-contain" />
+              <img src="elements/love-stamp.png" alt="" className="h-10 w-10 object-contain" />
+              <img src="elements/memories-stamp.png" alt="" className="h-10 w-10 object-contain" />
+              <img src="elements/arrowstamp.png" alt="" className="h-10 w-10 object-contain" />
+              <img src="elements/gold-stamp.png" alt="" className="h-10 w-10 object-contain" />
             </div>
 
             <p className="mt-4 font-script text-3xl text-[#722f37]">

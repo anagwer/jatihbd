@@ -228,22 +228,22 @@ export const BirthdayCake: React.FC<BirthdayCakeProps> = ({
       <div className="mx-auto max-w-3xl rounded-lg burgundy-panel p-6 sm:p-10 text-center relative overflow-hidden">
         {/* Scrapbook Collage Accents */}
         <img
-          src="/elements/candle.png"
+          src="elements/candle.png"
           alt=""
           className="pointer-events-none hidden sm:block absolute top-4 left-4 w-14 opacity-80 -rotate-6"
         />
         <img
-          src="/elements/gold-clock.png"
+          src="elements/gold-clock.png"
           alt=""
           className="pointer-events-none hidden sm:block absolute top-5 right-5 w-16 opacity-75 rotate-12"
         />
         <img
-          src="/elements/spiral-star.png"
+          src="elements/spiral-star.png"
           alt=""
           className="pointer-events-none absolute bottom-3 left-3 w-12 sm:w-16 opacity-60 animate-float"
         />
         <img
-          src="/elements/red-plates.png"
+          src="elements/red-plates.png"
           alt=""
           className="pointer-events-none hidden sm:block absolute bottom-3 right-4 w-16 opacity-70"
         />
@@ -262,17 +262,17 @@ export const BirthdayCake: React.FC<BirthdayCakeProps> = ({
         <div className="relative mx-auto mt-10 mb-8 flex flex-col items-center select-none">
           {/* Calla Lily Bouquets flanking the cake */}
           <img
-            src="/elements/lily.png"
+            src="elements/lily.png"
             alt="Calla Lily"
             className="pointer-events-none absolute -left-2 sm:left-6 bottom-6 w-20 sm:w-28 z-20 -rotate-12 drop-shadow-xl"
           />
           <img
-            src="/elements/lily-1.png"
+            src="elements/lily-1.png"
             alt="Calla Lily"
             className="pointer-events-none absolute -right-2 sm:right-6 bottom-6 w-20 sm:w-28 z-20 rotate-12 drop-shadow-xl"
           />
           <img
-            src="/elements/lily-2.png"
+            src="elements/lily-2.png"
             alt="Calla Lily"
             className="pointer-events-none hidden sm:block absolute left-16 top-14 w-16 z-20 -rotate-6 opacity-90 drop-shadow-lg"
           />

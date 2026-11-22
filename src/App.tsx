@@ -78,32 +78,32 @@ export function App() {
         {/* Hero Collage Banner */}
         <section className="relative pt-10 pb-6 px-4 text-center overflow-hidden">
           <img
-            src="/elements/ocean-top-left.png"
+            src="elements/ocean-top-left.png"
             alt=""
             className="pointer-events-none absolute top-0 left-0 w-32 sm:w-52 opacity-40"
           />
           <img
-            src="/elements/red-bottom-right.png"
+            src="elements/red-bottom-right.png"
             alt=""
             className="pointer-events-none absolute bottom-0 right-0 w-28 sm:w-44 opacity-45"
           />
           <img
-            src="/elements/sun-face.png"
+            src="elements/sun-face.png"
             alt=""
             className="pointer-events-none hidden sm:block absolute top-8 left-12 w-20 opacity-65 animate-float"
           />
           <img
-            src="/elements/moon-eclips.png"
+            src="elements/moon-eclips.png"
             alt=""
             className="pointer-events-none hidden sm:block absolute top-10 right-12 w-16 opacity-65 animate-float"
           />
           <img
-            src="/elements/flower.png"
+            src="elements/flower.png"
             alt=""
             className="pointer-events-none absolute bottom-2 left-3 sm:left-16 w-14 sm:w-20 opacity-70"
           />
           <img
-            src="/elements/butterfly.png"
+            src="elements/butterfly.png"
             alt=""
             className="pointer-events-none absolute top-6 right-4 sm:right-24 w-12 sm:w-16 opacity-80 animate-float"
           />
@@ -183,7 +183,7 @@ export function App() {
 
         <footer className="mt-8 border-t border-[#d4af37]/20 pt-8 pb-6 text-center px-4">
           <img
-            src="/elements/swan.png"
+            src="elements/swan.png"
             alt=""
             className="mx-auto w-14 opacity-75 mb-2"
           />

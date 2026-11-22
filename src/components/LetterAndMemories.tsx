@@ -54,8 +54,8 @@ const POSTCARDS: PostcardItem[] = [
     id: 1,
     title: 'New Horizons',
     subtitle: 'Blessing I • The Compass',
-    artwork: '/elements/london.png',
-    stamp: '/elements/arrowstamp.png',
+    artwork: 'elements/london.png',
+    stamp: 'elements/arrowstamp.png',
     backNote:
       'May this year take you to places that excite you, surrounded by people who appreciate your warmth and humor.',
   },
@@ -63,8 +63,8 @@ const POSTCARDS: PostcardItem[] = [
     id: 2,
     title: 'Steady Peace',
     subtitle: 'Blessing II • The Hourglass',
-    artwork: '/elements/gold-clock.png',
-    stamp: '/elements/memories-stamp.png',
+    artwork: 'elements/gold-clock.png',
+    stamp: 'elements/memories-stamp.png',
     backNote:
       'I wish you calm mornings, unhurried evenings, and the kind of peace that stays even when life gets busy.',
   },
@@ -72,8 +72,8 @@ const POSTCARDS: PostcardItem[] = [
     id: 3,
     title: 'Unfiltered Joy',
     subtitle: 'Blessing III • The Elixir',
-    artwork: '/elements/potion.png',
-    stamp: '/elements/love-stamp.png',
+    artwork: 'elements/potion.png',
+    stamp: 'elements/love-stamp.png',
     backNote:
       'Here is to spontaneous laughs, good coffee, and small everyday moments that make you glad to be alive.',
   },
@@ -81,8 +81,8 @@ const POSTCARDS: PostcardItem[] = [
     id: 4,
     title: 'Calla Lily Promise',
     subtitle: 'Blessing IV • Calla Lily',
-    artwork: '/elements/lily.png',
-    stamp: '/elements/gold-stamp.png',
+    artwork: 'elements/lily.png',
+    stamp: 'elements/gold-stamp.png',
     backNote:
       'Just like your favorite Calla Lily, keep standing tall and graceful—and know your big sis is always cheering for you.',
   },
@@ -155,7 +155,7 @@ export const LetterAndMemories: React.FC<LetterAndMemoriesProps> = ({
               <div className="h-1.5 w-32 bg-[#722f37]" />
               <div className="mx-2 flex h-14 w-14 items-center justify-center rounded-full bg-[#722f37] border-2 border-[#4e0d18] shadow-lg">
                 <img
-                  src="/elements/gold-stamp.png"
+                  src="elements/gold-stamp.png"
                   alt="Knight Seal"
                   className="h-9 w-9 object-contain"
                 />
@@ -184,17 +184,17 @@ export const LetterAndMemories: React.FC<LetterAndMemoriesProps> = ({
             }}
           >
             <img
-              src="/elements/pigeon.png"
+              src="elements/pigeon.png"
               alt=""
               className="pointer-events-none absolute -top-4 right-3 sm:right-6 w-16 sm:w-22 opacity-90 drop-shadow-md"
             />
             <img
-              src="/elements/lily.png"
+              src="elements/lily.png"
               alt="Calla Lily"
               className="pointer-events-none hidden sm:block absolute top-4 left-3 w-16 opacity-80 -rotate-12"
             />
             <img
-              src="/elements/love-gold.png"
+              src="elements/love-gold.png"
               alt=""
               className="pointer-events-none absolute bottom-4 right-6 w-14 opacity-70"
             />
@@ -267,12 +267,12 @@ export const LetterAndMemories: React.FC<LetterAndMemoriesProps> = ({
       {/* Interactive "Open When..." Wax-Sealed Parchment Envelopes */}
       <div className="mx-auto max-w-4xl relative">
         <img
-          src="/elements/books.png"
+          src="elements/books.png"
           alt=""
           className="pointer-events-none hidden sm:block absolute -top-8 -left-6 w-20 opacity-80 -rotate-6"
         />
         <img
-          src="/elements/potion.png"
+          src="elements/potion.png"
           alt=""
           className="pointer-events-none hidden sm:block absolute -top-6 -right-4 w-16 opacity-85 rotate-12"
         />
@@ -321,7 +321,7 @@ export const LetterAndMemories: React.FC<LetterAndMemoriesProps> = ({
                   </div>
                   <div className="shrink-0 flex h-11 w-11 items-center justify-center rounded-full bg-[#722f37] border-2 border-[#4e0d18] shadow-md">
                     <img
-                      src={isOpen ? '/elements/love-stamp.png' : '/elements/gold-stamp.png'}
+                      src={isOpen ? 'elements/love-stamp.png' : 'elements/gold-stamp.png'}
                       alt=""
                       className="h-7 w-7 object-contain"
                     />

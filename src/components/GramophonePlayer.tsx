@@ -37,7 +37,7 @@ export const GramophonePlayer: React.FC = () => {
           }`}
         >
           <img
-            src="/elements/plate-record.png"
+            src="elements/plate-record.png"
             alt="Vinyl Record"
             className="h-9 w-9 object-cover"
           />
